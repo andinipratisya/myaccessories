@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Accessories</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">my<span>accessories</span>.</a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#product">Produk</a>
+        <a href="#contact">Kontak</a>
+        <a href="#cart"></a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#cart" id="shopping-cart"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Cari produk..." />
+        <button id="search-button">🔍</button>
+      </div>
+    </nav>
+    <!-- Navbar end-->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Pesona di Setiap Detail <span>Manik</span></h1>
+        <p>
+          Hiasi tangan Anda dengan gelang kami yang dibuat dengan keahlian dan
+          cinta
+        </p>
+        <a href="cart.html" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami.png" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih buatan kami</h3>
+          <p>
+            Gelang kami menawarkan manik-manik lucu dengan desain estetik yang
+            menarik perhatian
+          </p>
+          <p>
+            Setiap gelang dibuat dengan bahan berkualitas tinggi dan perhatian
+            khusus pada detail untuk memberikan sentuhan unik pada penampilan
+            Anda
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Product Section start-->
+    <section id="product" class="product">
+      <h2><span>Produk</span> Kami</h2>
+      <p>
+        Gelang manik-manik lucu dan estetik, karena pergelangan tangan juga
+        butuh aksesoris yang bikin senyum!
+      </p>
+      <div class="row" id="product-container">
+        <div class="product-card">
+          <img src="img/product/1.jfif" alt="01" class="product-card-img" />
+          <h3 class="product-card-title">Produk 01</h3>
+          <p>IDR 20000</p>
+          <div class="quantity-controls">
+            <button class="decrease-quantity" data-product-id="01">-</button>
+            <input
+              type="number"
+              class="product-quantity"
+              data-product-id="01"
+              value="1"
+            />
+            <button class="increase-quantity" data-product-id="01">+</button>
+          </div>
+          <a
+            href="#"
+            class="add-to-cart"
+            data-product-id="01"
+            data-product-name="Produk 01"
+            data-product-price="20000"
+            >Tambahkan ke Keranjang</a
+          >
+        </div>
+        <div class="product-card">
+          <img src="img/product/2.jfif" alt="02" class="product-card-img" />
+          <h3 class="product-card-title">Produk 02</h3>
+          <p>IDR 20000</p>
+          <div class="quantity-controls">
+            <button class="decrease-quantity" data-product-id="02">-</button>
+            <input
+              type="number"
+              class="product-quantity"
+              data-product-id="02"
+              value="1"
+            />
+            <button class="increase-quantity" data-product-id="02">+</button>
+          </div>
+          <a
+            href="#"
+            class="add-to-cart"
+            data-product-id="02"
+            data-product-name="Produk 02"
+            data-product-price="20000"
+            >Tambahkan ke Keranjang</a
+          >
+        </div>
+        <div class="product-card">
+          <img src="img/product/3.jfif" alt="03" class="product-card-img" />
+          <h3 class="product-card-title">Produk 03</h3>
+          <p>IDR 20000</p>
+          <div class="quantity-controls">
+            <button class="decrease-quantity" data-product-id="03">-</button>
+            <input
+              type="number"
+              class="product-quantity"
+              data-product-id="03"
+              value="1"
+            />
+            <button class="increase-quantity" data-product-id="03">+</button>
+          </div>
+          <a
+            href="#"
+            class="add-to-cart"
+            data-product-id="03"
+            data-product-name="Produk 03"
+            data-product-price="20000"
+            >Tambahkan ke Keranjang</a
+          >
+        </div>
+        <div class="product-card">
+          <img src="img/product/4.jfif" alt="04" class="product-card-img" />
+          <h3 class="product-card-title">Produk 04</h3>
+          <p>IDR 20000</p>
+          <div class="quantity-controls">
+            <button class="decrease-quantity" data-product-id="04">-</button>
+            <input
+              type="number"
+              class="product-quantity"
+              data-product-id="04"
+              value="1"
+            />
+            <button class="increase-quantity" data-product-id="04">+</button>
+          </div>
+          <a
+            href="#"
+            class="add-to-cart"
+            data-product-id="04"
+            data-product-name="Produk 04"
+            data-product-price="20000"
+            >Tambahkan ke Keranjang</a
+          >
+        </div>
+        <div class="product-card">
+          <img src="img/product/5.jfif" alt="05" class="product-card-img" />
+          <h3 class="product-card-title">Produk 05</h3>
+          <p>IDR 20000</p>
+          <div class="quantity-controls">
+            <button class="decrease-quantity" data-product-id="05">-</button>
+            <input
+              type="number"
+              class="product-quantity"
+              data-product-id="05"
+              value="1"
+            />
+            <button class="increase-quantity" data-product-id="05">+</button>
+          </div>
+          <a
+            href="#"
+            class="add-to-cart"
+            data-product-id="05"
+            data-product-name="Produk 05"
+            data-product-price="20000"
+            >Tambahkan ke Keranjang</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Product Section end-->
+
+    <!-- Cart Section start-->
+    <section id="cart" class="cart">
+      <h2><span>Keranjang</span> Belanja</h2>
+      <div id="cart-items"></div>
+      <a href="payment.html" id="checkout-button">Checkout</a>
+    </section>
+    <!-- Cart Section end-->
+
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Jangan ragu untuk menghubungi kami melalui email, telepon, atau sosial
+        media
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.44554020067!2d104.68056164686126!3d-2.9547940549312774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1718902908105!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form id="contactForm">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" id="name" placeholder="Nama" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" id="phone" placeholder="Nomor HP" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input
+              type="email"
+              id="keterangan"
+              placeholder="Keterangan"
+              required
+            />
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/aproces.id?igsh=bGNpcDY0bXFnb3Zi"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#product">Produk</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">andinipratisya</a>. 2024.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
